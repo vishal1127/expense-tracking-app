@@ -1,0 +1,365 @@
+html,
+body {
+  /* height: 100%; */
+  /* background-color: grey; */
+}
+
+.main-bg {
+  background-color: rgb(144, 145, 145);
+}
+
+body {
+  background-color: rgb(176 176 176);
+  /* overflow-y: scroll; */
+}
+
+.expense-body {
+  background-color: rgb(176 176 176);
+  height: 100vh;
+}
+
+.table-title {
+  text-align: center;
+}
+
+.tabs {
+  width: 600px !important;
+}
+
+.signup-form {
+  background-color: rgba(255, 255, 255, 0.776);
+  border-radius: 10px;
+  width: 450px;
+}
+
+.form-signin {
+  /* max-width: 330px; */
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.daily-box {
+  /* background-color: rgb(161, 238, 243); */
+  height: 300px;
+  border-radius: 15px;
+}
+
+.date {
+  display: grid;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-left: 7px;
+  /* padding-left: 11px; */
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  grid-row: span 2;
+  align-content: center;
+  justify-content: center;
+}
+
+.day {
+  grid-column: 3;
+  grid-row: 2;
+  padding-left: 1rem;
+  padding-bottom: 4px;
+  /* margin-bottom: 12px; */
+}
+
+.daily-month-year {
+  padding-left: 1rem;
+  padding-bottom: 4px;
+}
+
+.balance-label {
+  grid-column: 4;
+  grid-row: 1;
+  align-self: end;
+  font-size: 14px;
+}
+
+.daily-balance-amount {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.arrow-icon {
+  grid-row: span 2;
+  align-self: center;
+}
+
+.daily-credit-debit {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.monthly-total-income-expense {
+  display: grid;
+  grid-template-columns: 200px 100px 200px 80px;
+}
+
+.monthly-total-balance {
+  grid-column: 3;
+}
+
+.cf-label {
+  padding-left: 2%;
+}
+
+.cf-amount {
+  display: grid;
+  justify-content: end;
+  padding-right: 5%;
+}
+
+.credit-table {
+  grid-column: 1/3;
+}
+
+.table-info {
+  color: green;
+}
+
+.debit-table {
+  grid-column: 1/3;
+}
+
+.hiddenRow {
+  padding: 0% !important;
+}
+
+.month-year {
+  display: grid;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.add-btn-div {
+  margin-right: 2%;
+}
+
+.total-expenditure-td {
+  display: flex;
+  justify-content: end;
+}
+
+.add-btn {
+  border-radius: 24px;
+  height: 49px;
+  width: 49px;
+  background-color: rgb(15, 103, 40);
+  border-color: rgb(14, 83, 31);
+}
+
+.nav-tabs {
+  margin-left: 20%;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  width: 297px;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  width: 297px;
+}
+
+.errormsg {
+  display: none;
+  background-color: rgb(230, 51, 51);
+  border-radius: 20px;
+  color: white;
+}
+
+.successmsg {
+  display: none;
+  background-color: rgb(25, 136, 25);
+  border-radius: 20px;
+  color: white;
+}
+
+#daily-calendar {
+  font-size: 30px;
+  color: darkslategrey;
+  text-align: center;
+  background-color: rgb(176, 176, 176);
+  border-style: none;
+}
+
+#monthly-calendar {
+  font-size: 30px;
+  color: darkslategrey;
+  text-align: center;
+  background-color: rgb(176, 176, 176);
+  border-style: none;
+}
+
+#yearly-calendar {
+  font-size: 30px;
+  color: darkslategrey;
+  text-align: center;
+  background-color: rgb(176, 176, 176);
+  border-style: none;
+}
+
+#daily-date-row {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 50px 285px 50px;
+}
+
+#monthly-date-row {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 50px 315px 50px;
+}
+
+/*date calendar*/
+input[type="date"] {
+  height: 40px;
+  background-color: rgb(144, 145, 145);
+  display: block;
+  position: relative;
+  padding: 1rem 3.5rem 1rem 0.75rem;
+
+  font-size: 1rem;
+  font-family: monospace;
+
+  border: 1px solid #8292a2;
+  border-radius: 0.25rem;
+  background: white
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23688EBB' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='translate(1 1)'%3E%3Crect width='18' height='18' y='2' rx='2'/%3E%3Cpath d='M13 0L13 4M5 0L5 4M0 8L18 8'/%3E%3C/g%3E%3C/svg%3E")
+    right 1rem center no-repeat;
+
+  cursor: pointer;
+}
+input[type="date"]:focus {
+  outline: none;
+  border-color: #3acfff;
+  box-shadow: 0 0 0 0.25rem rgba(0, 120, 250, 0.1);
+}
+
+::-webkit-datetime-edit {
+}
+::-webkit-datetime-edit-fields-wrapper {
+}
+::-webkit-datetime-edit-month-field:hover,
+::-webkit-datetime-edit-day-field:hover,
+::-webkit-datetime-edit-year-field:hover {
+  background: rgba(0, 120, 250, 0.1);
+}
+::-webkit-datetime-edit-text {
+  opacity: 0;
+}
+::-webkit-clear-button,
+::-webkit-inner-spin-button {
+  display: none;
+}
+::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 2.5rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  opacity: 0;
+  cursor: pointer;
+
+  color: rgba(0, 120, 250, 1);
+  background: rgba(0, 120, 250, 1);
+}
+
+input[type="date"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 0.05;
+}
+input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
+  opacity: 0.15;
+}
+
+input[type="month"] {
+  height: 40px;
+  background-color: rgb(144, 145, 145);
+  display: block;
+  position: relative;
+  padding: 1rem 3.5rem 1rem 0.75rem;
+
+  font-size: 1rem;
+  font-family: monospace;
+
+  border: 1px solid #8292a2;
+  border-radius: 0.25rem;
+  background: white
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23688EBB' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='translate(1 1)'%3E%3Crect width='18' height='18' y='2' rx='2'/%3E%3Cpath d='M13 0L13 4M5 0L5 4M0 8L18 8'/%3E%3C/g%3E%3C/svg%3E")
+    right 1rem center no-repeat;
+
+  cursor: pointer;
+}
+input[type="month"]:focus {
+  outline: none;
+  border-color: #3acfff;
+  box-shadow: 0 0 0 0.25rem rgba(0, 120, 250, 0.1);
+}
+
+::-webkit-datetime-edit {
+}
+::-webkit-datetime-edit-fields-wrapper {
+}
+::-webkit-datetime-edit-month-field:hover,
+::-webkit-datetime-edit-day-field:hover,
+::-webkit-datetime-edit-year-field:hover {
+  background: rgba(0, 120, 250, 0.1);
+}
+::-webkit-datetime-edit-text {
+  opacity: 0;
+}
+::-webkit-clear-button,
+::-webkit-inner-spin-button {
+  display: none;
+}
+::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 2.5rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  opacity: 0;
+  cursor: pointer;
+
+  color: rgba(0, 120, 250, 1);
+  background: rgba(0, 120, 250, 1);
+}
+
+input[type="month"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 0.05;
+}
+input[type="month"]:hover::-webkit-calendar-picker-indicator:hover {
+  opacity: 0.15;
+}
+
+@media screen and (max-width: 768px) {
+  .p-3 {
+    padding: 0 !important;
+  }
+  body {
+    overflow-y: scroll;
+  }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
